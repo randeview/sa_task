@@ -1,2 +1,90 @@
-docker build -t fastapi .
-docker run -dp 8000:8000 fastapi
+158  minikube start
+159  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+160  kubectl get pods
+161  kubectl get deployments
+162  kubectl get pods
+163  kubectl get deployments
+164  kubectl expose deployment hello-minikube --type=NodePort
+165  kubectl get services
+166  kubectl delete service,deployment hello-minikube
+167  kubectl get pods
+168  kubectl delete service hello-minikube
+169  kubectl delete hello-minikube
+170  kubectl get pods
+171  kubectl get pods -n kube-system
+172  kubectl create namespace myapp
+173  kubectl get namespaces
+174  kubectl get pods
+175  kubectl config set-context --current --namespace=myapp
+176  kubectl get pods
+177  kubectl get pods -A
+178  kubectl get pods -w
+179  docker [s
+180  docker ps
+181  minikube docker-env
+182  export DOCKER_TLS_VERIFY="1"
+183  export DOCKER_HOST="tcp://192.168.49.2:2376"
+184  export DOCKER_CERT_PATH="/home/nurlan/.minikube/certs"
+185  export MINIKUBE_ACTIVE_DOCKERD="minikube"
+186  docker ps
+187  docker imagea
+188  docker images
+189  kubectl get pods
+190  minikube start
+191  kubectl get all
+192  kubectl apply -f examples/postgres.yaml
+193  kubectl get pv
+194  kubectl get pvc
+195  pip freeze requirements.txt
+196  pip freeze > requirements.txt
+197  minikube ip
+198  psql -h 192.168.49.2
+199  sudo apt install postgresql-client-common
+200  psql -h 192.168.49.2
+201* psql -h 192.168.49.2 -p 30331 -U myuser -W myapps
+202  sudo apt-get update
+203  sudo apt install postgresql postgresql-contrib
+204  kubectl apply -f examples/postgres.yaml
+205  kubectl get pods
+206  kubectl logs -f postgres-statefulset-0
+207  kubectl get pvc
+208  minikube ip
+209  psql
+210  psql -h
+211  psql -h 192.168.49.2 -p 30331 -U myuser -W myapp
+212  kubectl apply -f examples/hello-py/deployment-env.yaml
+213  kubectl apply -f examples/hello-py/serviceyaml
+214  kubectl apply -f examples/hello-py/service.yaml
+215  CMD ["uviCMD ['app.py']corn", "main:app", "--host", "0.0.0.0", "--port", "80"]ENTRYPOINT ['python']
+216  cd examples/hello-py/
+217  docker build -t hello-py:v10 .
+218  kubectl apply -f service.yaml -f deployment-env.yaml
+219  kubectl delete -f service.yaml -f deployment-env.yaml
+220  kubectl apply -f service.yaml -f deployment-env.yaml
+221  minikube help
+222  minikube env
+223  minikube docker-env
+224  export DOCKER_TLS_VERIFY="1"
+225  export DOCKER_HOST="tcp://192.168.49.2:2376"
+226  export DOCKER_CERT_PATH="/home/nurlan/.minikube/certs"
+227  export MINIKUBE_ACTIVE_DOCKERD="minikube"
+228  kubectl delete -f service.yaml -f deployment-env.yaml
+229  docker build -t hello-py:v10 .
+230  kubectl delete -f service.yaml -f deployment-env.yaml
+231  kubectl apply -f service.yaml -f deployment-env.yaml
+232  kubectl delete -f service.yaml -f deployment-env.yaml
+233  docker build -t hello-py:v10 .
+234  docker images
+235  docker run -p 8000:800 hello-py
+236  docker run -p 8000:8000 hello-py:v10
+237  docker build -t hello-py:v10 .
+238  docker run -p 8000:8000 hello-py:v10
+239  docker build -t hello-py:v10 .
+240  docker run -p 8000:8000 hello-py:v10
+241  docker build -t hello-py:v10 .
+242  docker run -p 8000:8000 hello-py:v10
+243  kubectl apply -f service.yaml -f deployment-env.yaml
+244  minikube ip
+245  curl http://192.168.49.2
+246  curl http://192.168.49.2/config
+247  curl http://192.168.49.2:30596/config
